@@ -19,11 +19,19 @@ public class Main {
                 System.out.println(digits);
             }
         }
-        int Sigma;
+        double Sigma = 0 ;
         for (int i = 0; i < digits.toArray().length;i++){
-            System.out.println(digits.get(i));
-
+            int y = digits.get(i);
+            System.out.println(y);
+            Sigma = (Math.pow(y,x)) + Sigma;
         }
-
+        System.out.println(Sigma);
+        if (Sigma == num){
+            System.out.println(Sigma+" is a Armstrong Number");
+        }
+        else {
+            System.out.println("not an armstrong number");
+        }
     }
+
 }
